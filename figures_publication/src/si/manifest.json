@@ -1,0 +1,46 @@
+{
+  "output_root": "figures_publication",
+  "figure_dir": "figures_publication/si",
+  "source_dir": "figures_publication/src/si",
+  "figures": {
+    "figS01_surrogate_architecture": [
+      "figures_publication/si/figS01_surrogate_architecture.drawio",
+      "figures_publication/si/figS01_surrogate_architecture.drawio.xml",
+      "figures_publication/si/figS01_surrogate_architecture.pdf",
+      "figures_publication/si/figS01_surrogate_architecture.png",
+      "figures_publication/si/figS01_surrogate_architecture.svg"
+    ],
+    "figS02_heldout_logscale_consistency": [
+      "figures_publication/si/figS02_heldout_logscale_consistency.pdf",
+      "figures_publication/si/figS02_heldout_logscale_consistency.png"
+    ],
+    "figS03_model_selection_id_vs_ood": [
+      "figures_publication/si/figS03_model_selection_id_vs_ood.pdf",
+      "figures_publication/si/figS03_model_selection_id_vs_ood.png"
+    ],
+    "figS04_cross_validation_stability": [
+      "figures_publication/si/figS04_cross_validation_stability.pdf",
+      "figures_publication/si/figS04_cross_validation_stability.png"
+    ],
+    "figS05_ood_error_decomposition": [
+      "figures_publication/si/figS05_ood_error_decomposition.pdf",
+      "figures_publication/si/figS05_ood_error_decomposition.png"
+    ],
+    "figS06_regime_parameter_sensitivity": [
+      "figures_publication/si/figS06_regime_parameter_sensitivity.pdf",
+      "figures_publication/si/figS06_regime_parameter_sensitivity.png"
+    ],
+    "figS07_grid_refinement_stability": [
+      "figures_publication/si/figS07_grid_refinement_stability.pdf",
+      "figures_publication/si/figS07_grid_refinement_stability.png"
+    ]
+  },
+  "tables": {
+    "tableS1_head_metrics": "figures_publication/src/si/tableS1_head_metrics.csv",
+    "tableS2_cv_fold_details": "figures_publication/src/si/tableS2_cv_fold_details.csv",
+    "tableS3_hyperparameters": "figures_publication/src/si/tableS3_hyperparameters.csv",
+    "tableS4_consistency_ablation_ood": "figures_publication/src/si/tableS4_consistency_ablation_ood.csv",
+    "tableS4_consistency_ablation_test": "figures_publication/src/si/tableS4_consistency_ablation_test.csv"
+  },
+  "grid_spatial_metrics": "figures_publication/src/si/grid_resolution_spatial_metrics.json"
+}

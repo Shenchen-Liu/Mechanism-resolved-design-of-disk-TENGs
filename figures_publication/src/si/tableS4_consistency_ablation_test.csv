@@ -1,0 +1,5 @@
+metric,t1_with_consistency,t5_no_consistency,delta
+$Q_{sc}$ $R^2_{\log_{10}}$,0.9898,0.9835±0.0014,-0.0063
+$C^{-1}_{sum}$ $R^2_{\log_{10}}$,0.9966,0.9942±0.0012,-0.0025
+FOMS$_{direct}$ $R^2_{\log_{10}}$,0.9817,0.9805±0.0040,-0.0011
+Consistency Pearson,0.9684,0.9396±0.0247,-0.0288

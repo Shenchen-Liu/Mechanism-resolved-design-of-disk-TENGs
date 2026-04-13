@@ -1,0 +1,5 @@
+Model,validate1 FOMS,validate1 Cons.,validate2 FOMS,validate2 Cons.,validate3 FOMS,validate3 Cons.,Avg FOMS,Avg Cons.
+XGBoost (×3),0.3877,0.9121,-0.4877,0.6265,0.8887,0.8845,0.2629,0.8077
+MLP (no cons.),0.9073,0.9257,-0.4425,0.8821,0.4797,0.9786,0.3148,0.9288
+MLP (+ cons.),0.8866,0.8985,-0.6221,0.8932,0.5136,0.9795,0.2594,0.9237
+Ours (Trans.+cons.),0.8720,0.9770,0.9538,0.9665,0.9653,0.9886,0.9304,0.9774

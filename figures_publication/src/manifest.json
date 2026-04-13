@@ -1,0 +1,69 @@
+{
+  "generated_at": "2026-04-13T09:16:57.112411+00:00",
+  "output_root": "figures_publication",
+  "figures": {
+    "fig01": {
+      "main_files": [
+        "figures_publication/main/fig01_method_workflow.png",
+        "figures_publication/main/fig01_method_workflow.pdf",
+        "figures_publication/main/fig01_method_workflow.svg"
+      ],
+      "preview_file": "figures_publication/preview/fig01_method_workflow.png",
+      "placeholder": false,
+      "replacement_needed": false,
+      "source": "figures_publication/src/fig01_method_workflow.drawio",
+      "editable_xml": "figures_publication/src/fig01_method_workflow.xml"
+    },
+    "fig02": {
+      "main_files": [
+        "figures_publication/main/fig02_mechanism_landscape.png",
+        "figures_publication/main/fig02_mechanism_landscape.pdf",
+        "figures_publication/main/fig02_mechanism_landscape.svg"
+      ],
+      "preview_file": "figures_publication/preview/fig02_mechanism_landscape.png"
+    },
+    "fig03": {
+      "main_files": [
+        "figures_publication/main/fig03_design_landscapes_mechanism_transition.png",
+        "figures_publication/main/fig03_design_landscapes_mechanism_transition.pdf",
+        "figures_publication/main/fig03_design_landscapes_mechanism_transition.svg"
+      ],
+      "preview_file": "figures_publication/preview/fig03_design_landscapes_mechanism_transition.png",
+      "csv": "figures_publication/src/fig03_t11_three_scene_slice_data.csv"
+    },
+    "fig04": {
+      "main_files": [
+        "figures_publication/main/fig04_robust_design_map.png",
+        "figures_publication/main/fig04_robust_design_map.pdf",
+        "figures_publication/main/fig04_robust_design_map.svg"
+      ],
+      "preview_file": "figures_publication/preview/fig04_robust_design_map.png",
+      "csv": "figures_publication/src/fig04_t11_ashby_data.csv",
+      "recommend": {
+        "scenario": "low_E_mid_d",
+        "scenario_title": "low $\\varepsilon$, mid $d/R$",
+        "n": 2.0,
+        "hh": 0.053094487138606344,
+        "foms": 0.04754234850406647,
+        "log10_foms": -1.3229193687438965,
+        "cv_pct": 2.0596839487552643,
+        "worst_ratio_pct": 97.59690165519714,
+        "regime": 0,
+        "safe_zone": true,
+        "value_score": 0.980219205815558
+      }
+    },
+    "fig05": {
+      "main_files": [
+        "figures_publication/main/fig05_unseen_structural_dielectric_validation.png",
+        "figures_publication/main/fig05_unseen_structural_dielectric_validation.pdf",
+        "figures_publication/main/fig05_unseen_structural_dielectric_validation.svg"
+      ],
+      "preview_file": "figures_publication/preview/fig05_unseen_structural_dielectric_validation.png"
+    }
+  },
+  "tables": {
+    "table01": "figures_publication/src/table01_model_capability_summary.csv",
+    "table02": "figures_publication/src/table02_design_guidelines.csv"
+  }
+}

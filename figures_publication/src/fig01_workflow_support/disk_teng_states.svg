@@ -1,0 +1,117 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="1200px" height="520px" viewBox="0 0 1200 520">
+  <text x="26" y="30" text-anchor="start" font-size="24" font-family="Arial" font-weight="bold" font-style="normal" fill="#111827">(a)</text>
+  <text x="626" y="30" text-anchor="start" font-size="24" font-family="Arial" font-weight="bold" font-style="normal" fill="#111827">(b)</text>
+  <text x="200" y="64" text-anchor="middle" font-size="20" font-family="Arial" font-weight="bold" font-style="normal" fill="#111827">Fully contacted</text>
+  <text x="320" y="150" text-anchor="start" font-size="13" font-family="Arial" font-weight="normal" font-style="normal" fill="#111827">Top electrode</text>
+  <text x="320" y="186" text-anchor="start" font-size="13" font-family="Arial" font-weight="normal" font-style="normal" fill="#111827">Dielectric layer</text>
+  <text x="320" y="246" text-anchor="start" font-size="13" font-family="Arial" font-weight="normal" font-style="normal" fill="#111827">Bottom electrode</text>
+  <text x="200" y="108" text-anchor="middle" font-size="16" font-family="Arial" font-weight="normal" font-style="italic" fill="#111827">n</text>
+  <text x="326" y="188" text-anchor="start" font-size="16" font-family="Arial" font-weight="normal" font-style="italic" fill="#111827">ε</text>
+  <text x="340" y="190.0" text-anchor="start" font-size="14" font-family="Arial" font-weight="normal" font-style="normal" fill="#111827">h/R</text>
+  <text x="200" y="330" text-anchor="middle" font-size="14" font-family="Arial" font-weight="normal" font-style="normal" fill="#374151">Charge transfer</text>
+  <g>
+    <path d="M 92,238 L 92,256 A 108,34 0 0 0 308,256 L 308,238 A 108,34 0 0 1 92,238 Z" fill="#C9D1D9" stroke="#334155" stroke-width="1.2" />
+    <ellipse cx="200" cy="238" rx="108" ry="34" fill="#E7ECF2" stroke="#334155" stroke-width="1.2" />
+    <path d="M 92,178 L 92,194 A 108,34 0 0 0 308,194 L 308,178 A 108,34 0 0 1 92,178 Z" fill="#BFD4E3" stroke="#334155" stroke-width="1.2" />
+    <ellipse cx="200" cy="178" rx="108" ry="34" fill="#D9E9F5" stroke="#334155" stroke-width="1.2" />
+    <path d="M 92,160 L 92,178 A 108,34 0 0 0 308,178 L 308,160 A 108,34 0 0 1 92,160 Z" fill="#E6EDF5" stroke="#334155" stroke-width="1.2" />
+    <ellipse cx="200" cy="160" rx="108" ry="34" fill="#F8FBFE" stroke="#334155" stroke-width="1.2" />
+    <path d="M 293.77,161.95 A 94.00,28.00 0 0 1 270.94,178.37 L 218.11,166.56 A 24.00,10.00 0 0 0 223.94,160.70 Z" fill="#2C7FB8" stroke="#F8FBFE" stroke-width="1.5" />
+    <path d="M 261.67,181.13 A 94.00,28.00 0 0 1 206.56,187.93 L 201.67,169.98 A 24.00,10.00 0 0 0 215.75,167.55 Z" fill="#2C7FB8" stroke="#F8FBFE" stroke-width="1.5" />
+    <path d="M 193.44,187.93 A 94.00,28.00 0 0 1 138.33,181.13 L 184.25,167.55 A 24.00,10.00 0 0 0 198.33,169.98 Z" fill="#2C7FB8" stroke="#F8FBFE" stroke-width="1.5" />
+    <path d="M 129.06,178.37 A 94.00,28.00 0 0 1 106.23,161.95 L 176.06,160.70 A 24.00,10.00 0 0 0 181.89,166.56 Z" fill="#2C7FB8" stroke="#F8FBFE" stroke-width="1.5" />
+    <path d="M 106.23,158.05 A 94.00,28.00 0 0 1 129.06,141.63 L 181.89,153.44 A 24.00,10.00 0 0 0 176.06,159.30 Z" fill="#2C7FB8" stroke="#F8FBFE" stroke-width="1.5" />
+    <path d="M 138.33,138.87 A 94.00,28.00 0 0 1 193.44,132.07 L 198.33,150.02 A 24.00,10.00 0 0 0 184.25,152.45 Z" fill="#2C7FB8" stroke="#F8FBFE" stroke-width="1.5" />
+    <path d="M 206.56,132.07 A 94.00,28.00 0 0 1 261.67,138.87 L 215.75,152.45 A 24.00,10.00 0 0 0 201.67,150.02 Z" fill="#2C7FB8" stroke="#F8FBFE" stroke-width="1.5" />
+    <path d="M 270.94,141.63 A 94.00,28.00 0 0 1 293.77,158.05 L 223.94,159.30 A 24.00,10.00 0 0 0 218.11,153.44 Z" fill="#2C7FB8" stroke="#F8FBFE" stroke-width="1.5" />
+    <ellipse cx="200" cy="160" rx="18" ry="8" fill="#F8FBFE" stroke="#334155" stroke-width="1.0" />
+    <line x1="95" y1="124" x2="305" y2="124" stroke="#374151" stroke-width="1.4" />
+    <line x1="305" y1="124" x2="298.0717967697245" y2="128.0" stroke="#374151" stroke-width="1.4" />
+    <line x1="305" y1="124" x2="298.0717967697245" y2="120.0" stroke="#374151" stroke-width="1.4" />
+    <line x1="332" y1="178" x2="332" y2="194" stroke="#6B7280" stroke-width="1.2" />
+    <line x1="332" y1="194" x2="328.0" y2="187.0717967697245" stroke="#6B7280" stroke-width="1.2" />
+    <line x1="332" y1="194" x2="336.0" y2="187.0717967697245" stroke="#6B7280" stroke-width="1.2" />
+    <text x="130.0" y="188" text-anchor="middle" font-size="14" font-family="Arial" font-weight="bold" fill="#3B82C4">−</text>
+    <text x="153.33333333333334" y="188" text-anchor="middle" font-size="14" font-family="Arial" font-weight="bold" fill="#3B82C4">−</text>
+    <text x="176.66666666666666" y="188" text-anchor="middle" font-size="14" font-family="Arial" font-weight="bold" fill="#3B82C4">−</text>
+    <text x="200.0" y="188" text-anchor="middle" font-size="14" font-family="Arial" font-weight="bold" fill="#3B82C4">−</text>
+    <text x="223.33333333333331" y="188" text-anchor="middle" font-size="14" font-family="Arial" font-weight="bold" fill="#3B82C4">−</text>
+    <text x="246.66666666666669" y="188" text-anchor="middle" font-size="14" font-family="Arial" font-weight="bold" fill="#3B82C4">−</text>
+    <text x="270.0" y="188" text-anchor="middle" font-size="14" font-family="Arial" font-weight="bold" fill="#3B82C4">−</text>
+    <text x="130.0" y="252" text-anchor="middle" font-size="14" font-family="Arial" font-weight="bold" fill="#E64B35">+</text>
+    <text x="153.33333333333334" y="252" text-anchor="middle" font-size="14" font-family="Arial" font-weight="bold" fill="#E64B35">+</text>
+    <text x="176.66666666666666" y="252" text-anchor="middle" font-size="14" font-family="Arial" font-weight="bold" fill="#E64B35">+</text>
+    <text x="200.0" y="252" text-anchor="middle" font-size="14" font-family="Arial" font-weight="bold" fill="#E64B35">+</text>
+    <text x="223.33333333333331" y="252" text-anchor="middle" font-size="14" font-family="Arial" font-weight="bold" fill="#E64B35">+</text>
+    <text x="246.66666666666669" y="252" text-anchor="middle" font-size="14" font-family="Arial" font-weight="bold" fill="#E64B35">+</text>
+    <text x="270.0" y="252" text-anchor="middle" font-size="14" font-family="Arial" font-weight="bold" fill="#E64B35">+</text>
+  </g>
+  <text x="800" y="64" text-anchor="middle" font-size="20" font-family="Arial" font-weight="bold" font-style="normal" fill="#111827">Fully separated</text>
+  <text x="920" y="132" text-anchor="start" font-size="13" font-family="Arial" font-weight="normal" font-style="normal" fill="#111827">Top electrode</text>
+  <text x="920" y="168" text-anchor="start" font-size="13" font-family="Arial" font-weight="normal" font-style="normal" fill="#111827">Dielectric layer</text>
+  <text x="920" y="252" text-anchor="start" font-size="13" font-family="Arial" font-weight="normal" font-style="normal" fill="#111827">Bottom electrode</text>
+  <text x="920" y="214.0" text-anchor="start" font-size="13" font-family="Arial" font-weight="normal" font-style="normal" fill="#111827">Air gap</text>
+  <text x="800" y="90" text-anchor="middle" font-size="16" font-family="Arial" font-weight="normal" font-style="italic" fill="#111827">n</text>
+  <text x="926" y="170" text-anchor="start" font-size="16" font-family="Arial" font-weight="normal" font-style="italic" fill="#111827">ε</text>
+  <text x="926" y="214.0" text-anchor="start" font-size="14" font-family="Arial" font-weight="normal" font-style="normal" fill="#111827">d/R</text>
+  <text x="940" y="172.0" text-anchor="start" font-size="14" font-family="Arial" font-weight="normal" font-style="normal" fill="#111827">h/R</text>
+  <text x="800" y="342" text-anchor="middle" font-size="14" font-family="Arial" font-weight="normal" font-style="normal" fill="#374151">Potential difference</text>
+  <text x="950" y="260" text-anchor="middle" font-size="16" font-family="Arial" font-weight="bold" font-style="normal" fill="#E64B35">V</text>
+  <g>
+    <path d="M 692,244 L 692,262 A 108,34 0 0 0 908,262 L 908,244 A 108,34 0 0 1 692,244 Z" fill="#C9D1D9" stroke="#334155" stroke-width="1.2" />
+    <ellipse cx="800" cy="244" rx="108" ry="34" fill="#E7ECF2" stroke="#334155" stroke-width="1.2" />
+    <path d="M 692,160 L 692,176 A 108,34 0 0 0 908,176 L 908,160 A 108,34 0 0 1 692,160 Z" fill="#BFD4E3" stroke="#334155" stroke-width="1.2" />
+    <ellipse cx="800" cy="160" rx="108" ry="34" fill="#D9E9F5" stroke="#334155" stroke-width="1.2" />
+    <path d="M 692,142 L 692,160 A 108,34 0 0 0 908,160 L 908,142 A 108,34 0 0 1 692,142 Z" fill="#E6EDF5" stroke="#334155" stroke-width="1.2" />
+    <ellipse cx="800" cy="142" rx="108" ry="34" fill="#F8FBFE" stroke="#334155" stroke-width="1.2" />
+    <path d="M 893.77,143.95 A 94.00,28.00 0 0 1 870.94,160.37 L 818.11,148.56 A 24.00,10.00 0 0 0 823.94,142.70 Z" fill="#2C7FB8" stroke="#F8FBFE" stroke-width="1.5" />
+    <path d="M 861.67,163.13 A 94.00,28.00 0 0 1 806.56,169.93 L 801.67,151.98 A 24.00,10.00 0 0 0 815.75,149.55 Z" fill="#2C7FB8" stroke="#F8FBFE" stroke-width="1.5" />
+    <path d="M 793.44,169.93 A 94.00,28.00 0 0 1 738.33,163.13 L 784.25,149.55 A 24.00,10.00 0 0 0 798.33,151.98 Z" fill="#2C7FB8" stroke="#F8FBFE" stroke-width="1.5" />
+    <path d="M 729.06,160.37 A 94.00,28.00 0 0 1 706.23,143.95 L 776.06,142.70 A 24.00,10.00 0 0 0 781.89,148.56 Z" fill="#2C7FB8" stroke="#F8FBFE" stroke-width="1.5" />
+    <path d="M 706.23,140.05 A 94.00,28.00 0 0 1 729.06,123.63 L 781.89,135.44 A 24.00,10.00 0 0 0 776.06,141.30 Z" fill="#2C7FB8" stroke="#F8FBFE" stroke-width="1.5" />
+    <path d="M 738.33,120.87 A 94.00,28.00 0 0 1 793.44,114.07 L 798.33,132.02 A 24.00,10.00 0 0 0 784.25,134.45 Z" fill="#2C7FB8" stroke="#F8FBFE" stroke-width="1.5" />
+    <path d="M 806.56,114.07 A 94.00,28.00 0 0 1 861.67,120.87 L 815.75,134.45 A 24.00,10.00 0 0 0 801.67,132.02 Z" fill="#2C7FB8" stroke="#F8FBFE" stroke-width="1.5" />
+    <path d="M 870.94,123.63 A 94.00,28.00 0 0 1 893.77,140.05 L 823.94,141.30 A 24.00,10.00 0 0 0 818.11,135.44 Z" fill="#2C7FB8" stroke="#F8FBFE" stroke-width="1.5" />
+    <ellipse cx="800" cy="142" rx="18" ry="8" fill="#F8FBFE" stroke="#334155" stroke-width="1.0" />
+    <line x1="698" y1="176" x2="902" y2="176" stroke="#D6DEE8" stroke-width="1.2" />
+    <line x1="698" y1="244" x2="902" y2="244" stroke="#D6DEE8" stroke-width="1.2" />
+    <line x1="695" y1="106" x2="905" y2="106" stroke="#374151" stroke-width="1.4" />
+    <line x1="905" y1="106" x2="898.0717967697245" y2="110.0" stroke="#374151" stroke-width="1.4" />
+    <line x1="905" y1="106" x2="898.0717967697245" y2="102.0" stroke="#374151" stroke-width="1.4" />
+    <line x1="918" y1="176" x2="918" y2="244" stroke="#6B7280" stroke-width="1.2" />
+    <line x1="918" y1="244" x2="914.0" y2="237.0717967697245" stroke="#6B7280" stroke-width="1.2" />
+    <line x1="918" y1="244" x2="922.0" y2="237.0717967697245" stroke="#6B7280" stroke-width="1.2" />
+    <line x1="932" y1="160" x2="932" y2="176" stroke="#6B7280" stroke-width="1.2" />
+    <line x1="932" y1="176" x2="928.0" y2="169.0717967697245" stroke="#6B7280" stroke-width="1.2" />
+    <line x1="932" y1="176" x2="936.0" y2="169.0717967697245" stroke="#6B7280" stroke-width="1.2" />
+    <text x="730.0" y="170" text-anchor="middle" font-size="14" font-family="Arial" font-weight="bold" fill="#3B82C4">−</text>
+    <text x="753.3333333333334" y="170" text-anchor="middle" font-size="14" font-family="Arial" font-weight="bold" fill="#3B82C4">−</text>
+    <text x="776.6666666666666" y="170" text-anchor="middle" font-size="14" font-family="Arial" font-weight="bold" fill="#3B82C4">−</text>
+    <text x="800.0" y="170" text-anchor="middle" font-size="14" font-family="Arial" font-weight="bold" fill="#3B82C4">−</text>
+    <text x="823.3333333333334" y="170" text-anchor="middle" font-size="14" font-family="Arial" font-weight="bold" fill="#3B82C4">−</text>
+    <text x="846.6666666666666" y="170" text-anchor="middle" font-size="14" font-family="Arial" font-weight="bold" fill="#3B82C4">−</text>
+    <text x="870.0" y="170" text-anchor="middle" font-size="14" font-family="Arial" font-weight="bold" fill="#3B82C4">−</text>
+    <text x="730.0" y="258" text-anchor="middle" font-size="14" font-family="Arial" font-weight="bold" fill="#E64B35">+</text>
+    <text x="753.3333333333334" y="258" text-anchor="middle" font-size="14" font-family="Arial" font-weight="bold" fill="#E64B35">+</text>
+    <text x="776.6666666666666" y="258" text-anchor="middle" font-size="14" font-family="Arial" font-weight="bold" fill="#E64B35">+</text>
+    <text x="800.0" y="258" text-anchor="middle" font-size="14" font-family="Arial" font-weight="bold" fill="#E64B35">+</text>
+    <text x="823.3333333333334" y="258" text-anchor="middle" font-size="14" font-family="Arial" font-weight="bold" fill="#E64B35">+</text>
+    <text x="846.6666666666666" y="258" text-anchor="middle" font-size="14" font-family="Arial" font-weight="bold" fill="#E64B35">+</text>
+    <text x="870.0" y="258" text-anchor="middle" font-size="14" font-family="Arial" font-weight="bold" fill="#E64B35">+</text>
+    <line x1="760" y1="240" x2="760" y2="182" stroke="#94A3B8" stroke-width="1.5" />
+    <line x1="760" y1="182" x2="764.0" y2="188.9282032302755" stroke="#94A3B8" stroke-width="1.5" />
+    <line x1="760" y1="182" x2="756.0" y2="188.9282032302755" stroke="#94A3B8" stroke-width="1.5" />
+    <line x1="800" y1="240" x2="800" y2="182" stroke="#94A3B8" stroke-width="1.5" />
+    <line x1="800" y1="182" x2="804.0" y2="188.9282032302755" stroke="#94A3B8" stroke-width="1.5" />
+    <line x1="800" y1="182" x2="796.0" y2="188.9282032302755" stroke="#94A3B8" stroke-width="1.5" />
+    <line x1="840" y1="240" x2="840" y2="182" stroke="#94A3B8" stroke-width="1.5" />
+    <line x1="840" y1="182" x2="844.0" y2="188.9282032302755" stroke="#94A3B8" stroke-width="1.5" />
+    <line x1="840" y1="182" x2="836.0" y2="188.9282032302755" stroke="#94A3B8" stroke-width="1.5" />
+  </g>
+  <g>
+    <line x1="540" y1="240" x2="600" y2="240" stroke="#94A3B8" stroke-width="2.2" />
+    <line x1="600" y1="240" x2="593.0717967697245" y2="244.0" stroke="#94A3B8" stroke-width="2.2" />
+    <line x1="600" y1="240" x2="593.0717967697245" y2="236.0" stroke="#94A3B8" stroke-width="2.2" />
+  </g>
+</svg>

@@ -1,0 +1,7 @@
+validation_set,metric,t1_with_consistency,t5_no_consistency,delta
+V1,FOMS $R^2_{\log_{10}}$,0.8720,0.9564,+0.0844
+V1,Consistency Pearson,0.9770,0.9700,-0.0070
+V2,FOMS $R^2_{\log_{10}}$,0.9538,0.9489,-0.0049
+V2,Consistency Pearson,0.9665,0.9890,+0.0225
+V3,FOMS $R^2_{\log_{10}}$,0.9653,0.9586,-0.0067
+V3,Consistency Pearson,0.9886,0.9900,+0.0014

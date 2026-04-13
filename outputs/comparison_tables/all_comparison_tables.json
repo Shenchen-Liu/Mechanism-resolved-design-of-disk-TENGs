@@ -1,0 +1,131 @@
+{
+  "_metadata": {
+    "task": "T7_comparison_tables",
+    "timestamp": "2026-03-16T13:26:31.394214",
+    "updated": "2026-03-16 — ablation demoted, Transformer(no cons.) rows removed per narrative reassessment",
+    "sources": {
+      "T2": "outputs_multitask_physics/test_metrics.json",
+      "T3": "outputs_multitask_physics/ood_metrics.json",
+      "T4": "outputs/baselines/baseline_results.json + baseline_ood_results.json",
+      "T6": "outputs/cross_validation/cv_results.json"
+    },
+    "note": "T5 ablation demoted to SI-only backup. Table 4 removed. Transformer(no cons.) removed from Table 1/2 — OOD data showed consistency loss has ambiguous/negative effect on generalization, presenting it invites reviewer scrutiny."
+  },
+  "table1_model_comparison": [
+    {
+      "Model": "XGBoost (×3 independent)",
+      "Qsc R²_log10": "0.9912±0.0008",
+      "invC R²_log10": "0.9996±0.0000",
+      "FOMS R²_log10": "0.9868±0.0007",
+      "Consistency Pearson": "0.9961±0.0001",
+      "Type": "Baseline"
+    },
+    {
+      "Model": "Multi-MLP (no consistency)",
+      "Qsc R²_log10": "0.9379±0.0071",
+      "invC R²_log10": "0.9412±0.0103",
+      "FOMS R²_log10": "0.9157±0.0042",
+      "Consistency Pearson": "0.9359±0.0064",
+      "Type": "Baseline"
+    },
+    {
+      "Model": "Multi-MLP (+ consistency)",
+      "Qsc R²_log10": "0.9342±0.0055",
+      "invC R²_log10": "0.9390±0.0061",
+      "FOMS R²_log10": "0.9180±0.0059",
+      "Consistency Pearson": "0.9274±0.0130",
+      "Type": "Baseline"
+    },
+    {
+      "Model": "Ours (Transformer + consistency)",
+      "Qsc R²_log10": "0.9898",
+      "invC R²_log10": "0.9966",
+      "FOMS R²_log10": "0.9817",
+      "Consistency Pearson": "0.9684",
+      "Type": "Ours"
+    }
+  ],
+  "table2_ood_generalization": [
+    {
+      "Model": "XGBoost (×3)",
+      "validate1 FOMS": "0.3877",
+      "validate1 Cons.": "0.9121",
+      "validate2 FOMS": "-0.4877",
+      "validate2 Cons.": "0.6265",
+      "validate3 FOMS": "0.8887",
+      "validate3 Cons.": "0.8845",
+      "Avg FOMS": "0.2629",
+      "Avg Cons.": "0.8077"
+    },
+    {
+      "Model": "MLP (no cons.)",
+      "validate1 FOMS": "0.9073",
+      "validate1 Cons.": "0.9257",
+      "validate2 FOMS": "-0.4425",
+      "validate2 Cons.": "0.8821",
+      "validate3 FOMS": "0.4797",
+      "validate3 Cons.": "0.9786",
+      "Avg FOMS": "0.3148",
+      "Avg Cons.": "0.9288"
+    },
+    {
+      "Model": "MLP (+ cons.)",
+      "validate1 FOMS": "0.8866",
+      "validate1 Cons.": "0.8985",
+      "validate2 FOMS": "-0.6221",
+      "validate2 Cons.": "0.8932",
+      "validate3 FOMS": "0.5136",
+      "validate3 Cons.": "0.9795",
+      "Avg FOMS": "0.2594",
+      "Avg Cons.": "0.9237"
+    },
+    {
+      "Model": "Ours (Trans.+cons.)",
+      "validate1 FOMS": "0.8720",
+      "validate1 Cons.": "0.9770",
+      "validate2 FOMS": "0.9538",
+      "validate2 Cons.": "0.9665",
+      "validate3 FOMS": "0.9653",
+      "validate3 Cons.": "0.9886",
+      "Avg FOMS": "0.9304",
+      "Avg Cons.": "0.9774"
+    }
+  ],
+  "table3_cross_validation": [
+    {
+      "Output Head": "Qsc_MACRS",
+      "Train R²_log10": "0.9907±0.0016",
+      "Val R²_log10": "0.9863±0.0041",
+      "Val MAE_log10": "0.087±0.005",
+      "Val MAPE(%)": "28.5±10.2"
+    },
+    {
+      "Output Head": "invC_sum",
+      "Train R²_log10": "0.9953±0.0024",
+      "Val R²_log10": "0.9948±0.0026",
+      "Val MAE_log10": "0.028±0.006",
+      "Val MAPE(%)": "6.4±1.3"
+    },
+    {
+      "Output Head": "FOMS_direct",
+      "Train R²_log10": "0.9826±0.0069",
+      "Val R²_log10": "0.9754±0.0108",
+      "Val MAE_log10": "0.192±0.047",
+      "Val MAPE(%)": "379.7±564.2"
+    },
+    {
+      "Output Head": "FOMS_phys",
+      "Train R²_log10": "0.9860±0.0023",
+      "Val R²_log10": "0.9798±0.0063",
+      "Val MAE_log10": "0.171±0.011",
+      "Val MAPE(%)": "398.4±621.4"
+    },
+    {
+      "Output Head": "Consistency",
+      "Train R²_log10": "—",
+      "Val R²_log10": "—",
+      "Val MAE_log10": "0.002744±0.000300",
+      "Val MAPE(%)": "Pearson=0.9519±0.0164"
+    }
+  ]
+}
