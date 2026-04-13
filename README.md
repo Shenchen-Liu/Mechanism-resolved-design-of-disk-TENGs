@@ -1,4 +1,4 @@
-# Mechanism-Resolved Performance Landscape for Disk TENG
+# Mechanism-Resolved Performance Landscape and Tolerance-Aware Design Windows for Disk Triboelectric Nanogenerators
 
 Code and data package for the disk-type triboelectric nanogenerator (TENG) study.
 
