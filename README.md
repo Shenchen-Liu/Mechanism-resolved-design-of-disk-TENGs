@@ -60,6 +60,8 @@ streamlit run code/streamlit_app/app.py
 ## Notes
 
 - Paths in manifests are stored relative to the repository root.
+- Only the final processed dataset files in `data/` are included in the public package.
+- Raw and intermediate dataset-building files are not included.
 - The public package excludes manuscript drafting files, personal directories, and local cache files.
 - Existing exported figures are included so the repository can be used directly without rerunning the full workflow.
 - Intermediate hyperparameter-sweep outputs and auxiliary baseline weight files are intentionally omitted from the public package.

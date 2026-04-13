@@ -4,7 +4,7 @@ The code and data supporting this study are provided in this repository.
 
 The repository includes:
 
-- the processed training dataset and three external validation datasets
+- the final processed training dataset and three final processed external validation datasets
 - the released multitask surrogate checkpoint and scaler files
 - scripts for model training, inference, cross-validation, mechanism analysis, robustness analysis, and figure generation
 - exported main-text and supporting-information figure assets
@@ -12,4 +12,4 @@ The repository includes:
 
 Suggested manuscript text:
 
-> The code and data supporting this study are available at [GitHub URL]. The repository includes the processed training dataset, the external validation datasets, the released multitask surrogate checkpoint and scaler files, the analysis and figure-generation scripts, and the Streamlit-based design tool used for prediction, design-space exploration, and recommendation.
+> The code and data supporting this study are available at [GitHub URL]. The repository includes the final processed training dataset, the final processed external validation datasets, the released multitask surrogate checkpoint and scaler files, the analysis and figure-generation scripts, and the Streamlit-based design tool used for prediction, design-space exploration, and recommendation.
