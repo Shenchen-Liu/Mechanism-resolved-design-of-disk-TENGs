@@ -1801,9 +1801,9 @@ def build_fig5(model, scaler_X, scaler_qsc, scaler_invc, scaler_foms, device):
     from predict_multitask_physics import compute_combined_ood_metrics, validate_ood
 
     validate_inputs = [
-        ("validate1", DATA_DIR / "validate_foms_macrs.csv"),
-        ("validate2", DATA_DIR / "validate2_foms_macrs.csv"),
-        ("validate3", DATA_DIR / "validate3_foms_macrs.csv"),
+        ("validate1", DATA_DIR / "disk_teng_validation_v1_processed.csv"),
+        ("validate2", DATA_DIR / "disk_teng_validation_v2_processed.csv"),
+        ("validate3", DATA_DIR / "disk_teng_validation_v3_processed.csv"),
     ]
 
     results = {}

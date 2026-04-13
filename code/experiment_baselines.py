@@ -62,11 +62,11 @@ from utils_multitask_physics import (
 # 1. 路径配置
 # ============================================================================
 
-DATA_PATH = "../data/calculated_foms_macrs.csv"
+DATA_PATH = "../data/disk_teng_training_processed.csv"
 OOD_FILES = [
-    ("validate1", "../data/validate_foms_macrs.csv"),
-    ("validate2", "../data/validate2_foms_macrs.csv"),
-    ("validate3", "../data/validate3_foms_macrs.csv"),
+    ("validate1", "../data/disk_teng_validation_v1_processed.csv"),
+    ("validate2", "../data/disk_teng_validation_v2_processed.csv"),
+    ("validate3", "../data/disk_teng_validation_v3_processed.csv"),
 ]
 OUTPUT_DIR = "../outputs/baselines"
 OUR_MODEL_METRICS = "../outputs_multitask_physics/test_metrics.json"

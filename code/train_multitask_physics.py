@@ -70,7 +70,7 @@ LAMBDA_FOMS = 1.0  # FOMS_direct 回归损失权重
 LAMBDA_CONSISTENCY = 0.5  # FOMS_direct 与 FOMS_phys 一致性损失权重
 
 # --- 路径配置（相对于 code/ 目录）---
-DATA_PATH = "../data/calculated_foms_macrs.csv"
+DATA_PATH = "../data/disk_teng_training_processed.csv"
 CHECKPOINT_DIR = "../checkpoints_multitask_physics"
 ARTIFACT_DIR = "../artifacts_multitask_physics"
 OUTPUT_DIR = "../outputs_multitask_physics"

@@ -10,6 +10,21 @@ This repository contains:
 - exported main-text and supporting-information figure assets
 - a Streamlit app for prediction, design-space exploration, and recommendation
 
+## Data Files
+
+Final processed datasets in `data/`:
+
+- `disk_teng_training_processed.csv`
+- `disk_teng_validation_v1_processed.csv`
+- `disk_teng_validation_v2_processed.csv`
+- `disk_teng_validation_v3_processed.csv`
+
+Prediction result tables in `data/`:
+
+- `disk_teng_validation_v1_predictions.csv`
+- `disk_teng_validation_v2_predictions.csv`
+- `disk_teng_validation_v3_predictions.csv`
+
 ## Repository Layout
 
 ```text

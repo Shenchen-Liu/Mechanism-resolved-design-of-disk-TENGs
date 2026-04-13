@@ -67,7 +67,7 @@ T1_CONFIG = {
     "lambda_consistency": 0.3,
 }
 
-DATA_PATH = "../data/calculated_foms_macrs.csv"
+DATA_PATH = "../data/disk_teng_training_processed.csv"
 OUTPUT_DIR = "../outputs/cross_validation"
 
 

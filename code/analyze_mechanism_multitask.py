@@ -46,7 +46,7 @@ from predict_multitask_physics import load_model_and_scalers, predict_batch
 
 CONFIG = {
     # ---- 数据路径 (相对于 code/) ----
-    "csv_path": "../data/calculated_foms_macrs.csv",
+    "csv_path": "../data/disk_teng_training_processed.csv",
     "output_dir": "../outputs_mechanism_multitask",
 
     # ---- 模型路径 ----

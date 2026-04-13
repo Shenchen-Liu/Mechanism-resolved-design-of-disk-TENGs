@@ -63,7 +63,7 @@ REGIME_MIXED = 0
 # ============================================================================
 CONFIG = {
     # Paths (relative to code/)
-    "csv_path": "../data/calculated_foms_macrs.csv",
+    "csv_path": "../data/disk_teng_training_processed.csv",
     "output_dir": "../outputs/sensitivity",
     "checkpoint_dir": "../checkpoints_multitask_physics",
     "artifact_dir": "../artifacts_multitask_physics",

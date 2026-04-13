@@ -44,9 +44,9 @@ GRID_SENS = ROOT / "outputs" / "sensitivity" / "grid_resolution_sensitivity.csv"
 GRID_MAP_COMPARISON = ROOT / "outputs" / "sensitivity" / "fig_s8_grid_resolution.png"
 GRID_SPATIAL_METRICS = SOURCE_DIR / "grid_resolution_spatial_metrics.json"
 
-VAL1_CSV = ROOT / "data" / "multitask_validate1_results.csv"
-VAL2_CSV = ROOT / "data" / "multitask_validate2_results.csv"
-VAL3_CSV = ROOT / "data" / "multitask_validate3_results.csv"
+VAL1_CSV = ROOT / "data" / "disk_teng_validation_v1_predictions.csv"
+VAL2_CSV = ROOT / "data" / "disk_teng_validation_v2_predictions.csv"
+VAL3_CSV = ROOT / "data" / "disk_teng_validation_v3_predictions.csv"
 
 # ── Publication style ────────────────────────────────────────────────────
 OKABE_ITO = ["#0072B2", "#D55E00", "#009E73", "#CC79A7", "#E69F00"]

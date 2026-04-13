@@ -950,7 +950,7 @@ if __name__ == "__main__":
     print("=" * 60)
 
     # 路径配置 (相对于 code/)
-    csv_path = "../data/calculated_foms_macrs.csv"
+    csv_path = "../data/disk_teng_training_processed.csv"
     checkpoint_dir = "../checkpoints_multitask_physics"
     artifact_dir = "../artifacts_multitask_physics"
     output_dir = "../outputs_mechanism_multitask"

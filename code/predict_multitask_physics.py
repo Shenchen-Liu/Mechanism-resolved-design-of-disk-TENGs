@@ -711,9 +711,9 @@ def main():
         print("\n[模式] OOD 验证 (--validate)")
         print("  评估 validate1, validate2 数据集 (+ validate3 if available)\n")
 
-        validate1_path = os.path.join(args.validate_dir, "validate_foms_macrs.csv")
-        validate2_path = os.path.join(args.validate_dir, "validate2_foms_macrs.csv")
-        validate3_path = os.path.join(args.validate_dir, "validate3_foms_macrs.csv")
+        validate1_path = os.path.join(args.validate_dir, "disk_teng_validation_v1_processed.csv")
+        validate2_path = os.path.join(args.validate_dir, "disk_teng_validation_v2_processed.csv")
+        validate3_path = os.path.join(args.validate_dir, "disk_teng_validation_v3_processed.csv")
 
         if not os.path.exists(validate1_path) or not os.path.exists(validate2_path):
             print(f"[错误] 验证集文件不存在:")
@@ -725,7 +725,7 @@ def main():
         result1, metrics1 = validate_ood(
             validate1_path, model, scaler_X, scaler_qsc, scaler_invc, scaler_foms, device
         )
-        output1_path = os.path.join(args.validate_dir, "multitask_validate1_results.csv")
+        output1_path = os.path.join(args.validate_dir, "disk_teng_validation_v1_predictions.csv")
         result1.to_csv(output1_path, index=False, float_format="%.10e")
         print(f"\n[保存] validate1 结果: {output1_path}")
 
@@ -733,7 +733,7 @@ def main():
         result2, metrics2 = validate_ood(
             validate2_path, model, scaler_X, scaler_qsc, scaler_invc, scaler_foms, device
         )
-        output2_path = os.path.join(args.validate_dir, "multitask_validate2_results.csv")
+        output2_path = os.path.join(args.validate_dir, "disk_teng_validation_v2_predictions.csv")
         result2.to_csv(output2_path, index=False, float_format="%.10e")
         print(f"\n[保存] validate2 结果: {output2_path}")
 
@@ -744,7 +744,7 @@ def main():
             result3, metrics3 = validate_ood(
                 validate3_path, model, scaler_X, scaler_qsc, scaler_invc, scaler_foms, device
             )
-            output3_path = os.path.join(args.validate_dir, "multitask_validate3_results.csv")
+            output3_path = os.path.join(args.validate_dir, "disk_teng_validation_v3_predictions.csv")
             result3.to_csv(output3_path, index=False, float_format="%.10e")
             print(f"\n[保存] validate3 结果: {output3_path}")
 
