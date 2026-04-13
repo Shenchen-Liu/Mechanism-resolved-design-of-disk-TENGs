@@ -1,8 +1,8 @@
 # Mechanism-Resolved Performance Landscape and Tolerance-Aware Design Windows for Disk Triboelectric Nanogenerators
 
-Code and data package for the disk-type triboelectric nanogenerator (TENG) study.
+This repository provides the code, final processed datasets, released surrogate checkpoint, and publication assets for the study of mechanism-resolved design and perturbation-tolerant screening in disk triboelectric nanogenerators. The released workflow combines a physics-consistent multitask surrogate with mechanism mapping, robustness analysis, external validation, and an interactive Streamlit design interface.
 
-This repository contains:
+Repository contents:
 
 - the processed training dataset and three external validation datasets
 - the released multitask surrogate checkpoint and scaler files
