@@ -28,7 +28,7 @@ Prediction result tables in `data/`:
 ## Repository Layout
 
 ```text
-disk-teng-code-data-availability/
+mechanism-resolved-performance-landscape-and-tolerance-aware-design-windows-for-disk-triboelectric-nanogenerators/
 ├── code/
 │   ├── train_multitask_physics.py
 │   ├── predict_multitask_physics.py
