@@ -63,3 +63,4 @@ streamlit run code/streamlit_app/app.py
 - The public package excludes manuscript drafting files, personal directories, and local cache files.
 - Existing exported figures are included so the repository can be used directly without rerunning the full workflow.
 - Intermediate hyperparameter-sweep outputs and auxiliary baseline weight files are intentionally omitted from the public package.
+- Intermediate Fig.1 assembly assets are omitted; the final editable `drawio` source and released figure files are retained.

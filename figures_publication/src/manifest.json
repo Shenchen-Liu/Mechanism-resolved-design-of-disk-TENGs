@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-13T09:16:57.112411+00:00",
+  "generated_at": "2026-04-13T10:19:24.284321+00:00",
   "output_root": "figures_publication",
   "figures": {
     "fig01": {
@@ -11,8 +11,7 @@
       "preview_file": "figures_publication/preview/fig01_method_workflow.png",
       "placeholder": false,
       "replacement_needed": false,
-      "source": "figures_publication/src/fig01_method_workflow.drawio",
-      "editable_xml": "figures_publication/src/fig01_method_workflow.xml"
+      "source": "figures_publication/src/fig01_method_workflow.drawio"
     },
     "fig02": {
       "main_files": [

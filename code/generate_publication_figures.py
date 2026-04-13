@@ -283,7 +283,16 @@ def save_figure(fig, stem):
 
 def install_fig1_assets():
     """Copy the finalized Fig.1 assets into the publication tree."""
-    src_files = {ext: SRC_DIR / f"{FIG01_FINAL_STEM}.{ext}" for ext in FORMATS}
+    src_files = {}
+    for ext in FORMATS:
+        src_candidate = SRC_DIR / f"{FIG01_FINAL_STEM}.{ext}"
+        main_candidate = MAIN_DIR / f"{FIG01_FINAL_STEM}.{ext}"
+        if src_candidate.exists():
+            src_files[ext] = src_candidate
+        elif main_candidate.exists():
+            src_files[ext] = main_candidate
+        else:
+            src_files[ext] = src_candidate
     missing = [str(path) for path in src_files.values() if not path.exists()]
     if missing:
         raise FileNotFoundError(
@@ -294,12 +303,14 @@ def install_fig1_assets():
     for ext in FORMATS:
         src_path = src_files[ext]
         dst_path = MAIN_DIR / src_path.name
-        shutil.copy2(src_path, dst_path)
+        if src_path.resolve() != dst_path.resolve():
+            shutil.copy2(src_path, dst_path)
         main_files.append(rel_path(dst_path))
 
     preview_src = src_files["png"]
     preview_path = PREVIEW_DIR / preview_src.name
-    shutil.copy2(preview_src, preview_path)
+    if preview_src.resolve() != preview_path.resolve():
+        shutil.copy2(preview_src, preview_path)
 
     editable_source = SRC_DIR / f"{FIG01_FINAL_STEM}.drawio"
     editable_xml = SRC_DIR / f"{FIG01_FINAL_STEM}.xml"
