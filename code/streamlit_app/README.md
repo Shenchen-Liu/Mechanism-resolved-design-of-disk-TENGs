@@ -1,6 +1,6 @@
 # Disk TENG Open Design Interface
 
-Interactive delivery layer for the released disk-TENG workflow described in the Wiley manuscript **"From Charge-Transfer to Capacitance Limits: Mechanism-Resolved Design of Disk Triboelectric Nanogenerators with Fabrication Tolerance"**.
+Interactive delivery layer for the released disk-TENG workflow described in the AFM/Wiley manuscript **"Charge–Capacitance Channel Decomposition Reveals Fabrication-Tolerant Design Windows for Disk Triboelectric Nanogenerators"**.
 
 The app reuses the released physics-consistent multi-output surrogate, mechanism metrics, and robustness-screening logic used for the manuscript figures. It supports the paper's three user-facing tasks: single-point prediction, mechanism-resolved design-space exploration, and fabrication-tolerance-aware recommendation. It is intended for bounded exploration within the validated structural-dielectric domain.
 
