@@ -1,6 +1,6 @@
 ## Code and Data Availability
 
-The code and data supporting this study are provided in this repository.
+The code and data supporting the manuscript **"From Charge-Transfer to Capacitance Limits: Mechanism-Resolved Design of Disk Triboelectric Nanogenerators with Fabrication Tolerance"** are provided in this repository.
 
 The repository includes:
 
@@ -9,8 +9,8 @@ The repository includes:
 - the released multitask surrogate checkpoint and scaler files
 - scripts for model training, inference, cross-validation, mechanism analysis, robustness analysis, and figure generation
 - exported main-text and supporting-information figure assets
-- a Streamlit app for prediction, design-space exploration, and recommendation
+- a Streamlit-based open design interface for prediction, design-space exploration, and tolerance-aware recommendation
 
 Suggested manuscript text:
 
-> The code and data supporting this study are available at [GitHub URL]. The repository includes the final processed training dataset, the final processed external validation datasets, the corresponding released prediction result tables, the released multitask surrogate checkpoint and scaler files, the analysis and figure-generation scripts, and the Streamlit-based design tool used for prediction, design-space exploration, and recommendation.
+> The code and data supporting this study are available in the GitHub repository at https://github.com/Shenchen-Liu/Mechanism-resolved-design-of-disk-TENGs. The repository includes the final processed training dataset, the three final processed external validation datasets, the corresponding released prediction result tables, the released multitask surrogate checkpoint and scaler files, the analysis and figure-generation scripts, and the Streamlit-based open design interface used for prediction, design-space exploration, and tolerance-aware recommendation.

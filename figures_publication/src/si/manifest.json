@@ -33,6 +33,10 @@
     "figS07_grid_refinement_stability": [
       "figures_publication/si/figS07_grid_refinement_stability.pdf",
       "figures_publication/si/figS07_grid_refinement_stability.png"
+    ],
+    "figS08_open_streamlit_design_interface": [
+      "figures_publication/si/figS08_open_streamlit_design_interface.pdf",
+      "figures_publication/si/figS08_open_streamlit_design_interface.png"
     ]
   },
   "tables": {

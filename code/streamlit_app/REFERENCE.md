@@ -1,15 +1,15 @@
 # Streamlit App Reference
 
-This file maps the app pages to the released paper assets.
+This file maps the app pages to the released manuscript assets and clarifies how the open design interface supports the reported workflow.
 
 ## Page Mapping
 
 | App page | Main role | Related assets |
 |---|---|---|
-| `1_Performance_Predictor.py` | predict a single design point | model inference |
+| `1_Performance_Predictor.py` | predict a single design point | channel-resolved surrogate inference |
 | `2_Design_Space_Explorer.py` | inspect figure-aligned design scenes | Fig.3, Fig.4 |
-| `3_Design_Recommendation.py` | pooled screening and recommendation | Fig.4 decision logic |
-| `4_Publication_Figures.py` | browse exported figures and tables | Fig.2-Fig.5, Fig.S1-Fig.S7 |
+| `3_Design_Recommendation.py` | screen tolerance-aware candidate windows | Fig.4 decision logic |
+| `4_Publication_Figures.py` | browse exported figures and dynamic SI checks | Fig.2-Fig.5, Fig.S1-Fig.S8 |
 
 ## Shared Runtime Files
 
@@ -24,6 +24,8 @@ This file maps the app pages to the released paper assets.
 
 ## Recommended Repository Description
 
-An open-source Streamlit-based design tool that exposes the physics-consistent
-multitask surrogate, mechanism-aware design maps, robustness screening, and the
-released publication assets for disk-type TENG design.
+Code, data, released surrogate checkpoint, publication assets, and Streamlit interface for mechanism-resolved, fabrication-tolerant disk-TENG design using a physics-consistent multi-output surrogate.
+
+## Scope Note
+
+The Streamlit interface reuses the locked multitask surrogate, mechanism metrics, and robustness-screening logic used for the main-text figures. It should be used within the validated structural-dielectric domain rather than as an independent extrapolation engine.

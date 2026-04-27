@@ -1,14 +1,30 @@
-# Mechanism-Resolved Performance Landscape and Tolerance-Aware Design Windows for Disk Triboelectric Nanogenerators
+# From Charge-Transfer to Capacitance Limits: Mechanism-Resolved Design of Disk Triboelectric Nanogenerators with Fabrication Tolerance
 
-This repository provides the code, final processed datasets, released surrogate checkpoint, and publication assets for the study of mechanism-resolved design and perturbation-tolerant screening in disk triboelectric nanogenerators. The released workflow combines a physics-consistent multitask surrogate with mechanism mapping, robustness analysis, external validation, and an interactive Streamlit design interface.
+This repository supports the manuscript **"From Charge-Transfer to Capacitance Limits: Mechanism-Resolved Design of Disk Triboelectric Nanogenerators with Fabrication Tolerance"**. It provides the final processed datasets, released physics-consistent multi-output surrogate checkpoint, analysis scripts, publication assets, and the Streamlit-based open design interface used for prediction, design-space exploration, and tolerance-aware recommendation.
 
-Repository contents:
+The workflow decomposes the structural figure of merit (`FOM_S`) into a charge-transfer channel (`Q_sc,MACRS`) and a capacitance channel (`C^{-1}_sum`). A shared-backbone multitask surrogate predicts `Q_sc,MACRS`, `C^{-1}_sum`, and `FOM_S` from disk-TENG design variables: electrode-pair number, dielectric constant, dielectric-thickness-to-radius ratio (`h/R`), and air-gap-to-radius ratio (`d/R`).
 
-- the processed training dataset and three external validation datasets
-- the released multitask surrogate checkpoint and scaler files
-- scripts for training, validation, mechanism analysis, robustness screening, and figure generation
-- exported main-text and supporting-information figure assets
-- a Streamlit app for prediction, design-space exploration, and recommendation
+## Manuscript-Aligned Summary
+
+- Training data: 1,944 final processed COMSOL-derived disk-TENG designs.
+- Dense design-space evaluation: 7,776 supported design points.
+- Mechanism distribution under the reference setting: 58.6% charge-dominant, 36.1% mixed-regime, and 5.3% capacitance-dominant.
+- External validation: 43 unseen structural-dielectric combinations across three released validation sets.
+- Pooled out-of-distribution performance: `FOM_S` `R^2_log10 = 0.914`.
+- Robustness finding: mixed-regime windows tolerate +/-10% geometric perturbations better than designs near the nominal peak-`FOM_S` frontier.
+
+Recommended GitHub repository description:
+
+> Code, data, released surrogate checkpoint, publication assets, and Streamlit interface for mechanism-resolved, fabrication-tolerant disk-TENG design using a physics-consistent multi-output surrogate.
+
+## Repository Contents
+
+- Final processed training dataset and three final processed external validation datasets.
+- Released prediction result tables for the three external validation sets.
+- Released multitask surrogate checkpoint and scaler files.
+- Scripts for training, inference, cross-validation, mechanism analysis, robustness analysis, and figure generation.
+- Exported main-text figure assets and supporting-information assets, including the open design interface figure (`Fig. S8`).
+- Streamlit app for single-point prediction, mechanism-aware design-space exploration, and tolerance-aware candidate-window screening.
 
 ## Data Files
 
@@ -39,10 +55,10 @@ mechanism-resolved-performance-landscape-and-tolerance-aware-design-windows-for-
 ├── data/
 ├── artifacts_multitask_physics/
 ├── checkpoints_multitask_physics/
+├── figures_publication/
 ├── outputs/
 ├── outputs_multitask_physics/
-├── outputs_mechanism_multitask/
-└── figures_publication/
+└── outputs_mechanism_multitask/
 ```
 
 ## Quick Start
@@ -66,18 +82,17 @@ python code/generate_publication_figures.py
 python code/generate_si_assets.py
 ```
 
-Launch the Streamlit tool:
+Launch the Streamlit open design interface:
 
 ```bash
 streamlit run code/streamlit_app/app.py
 ```
 
-## Notes
+## Scope Notes
 
 - Paths in manifests are stored relative to the repository root.
-- Only the final processed dataset files in `data/` are included in the public package.
+- Only final processed dataset files are included in the public package.
 - Raw and intermediate dataset-building files are not included.
-- The public package excludes manuscript drafting files, personal directories, and local cache files.
-- Existing exported figures are included so the repository can be used directly without rerunning the full workflow.
-- Intermediate hyperparameter-sweep outputs and auxiliary baseline weight files are intentionally omitted from the public package.
-- Intermediate Fig.1 assembly assets are omitted; the final editable `drawio` source and released figure files are retained.
+- Existing exported figures are included so the repository can be inspected without rerunning the full workflow.
+- The Streamlit interface is a delivery layer for the reported workflow and reuses the released surrogate, mechanism metrics, and robustness-screening logic.
+- Use predictions within the validated structural-dielectric domain described in the manuscript.
