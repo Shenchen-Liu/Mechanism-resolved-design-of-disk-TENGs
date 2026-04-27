@@ -4,7 +4,7 @@ This repository supports the manuscript **"From Charge-Transfer to Capacitance L
 
 The workflow decomposes the structural figure of merit (`FOM_S`) into a charge-transfer channel (`Q_sc,MACRS`) and a capacitance channel (`C^{-1}_sum`). A shared-backbone multitask surrogate predicts `Q_sc,MACRS`, `C^{-1}_sum`, and `FOM_S` from disk-TENG design variables: electrode-pair number, dielectric constant, dielectric-thickness-to-radius ratio (`h/R`), and air-gap-to-radius ratio (`d/R`).
 
-## Manuscript-Aligned Summary
+## Wiley Manuscript Summary
 
 - Training data: 1,944 final processed COMSOL-derived disk-TENG designs.
 - Dense design-space evaluation: 7,776 supported design points.
@@ -13,9 +13,17 @@ The workflow decomposes the structural figure of merit (`FOM_S`) into a charge-t
 - Pooled out-of-distribution performance: `FOM_S` `R^2_log10 = 0.914`.
 - Robustness finding: mixed-regime windows tolerate +/-10% geometric perturbations better than designs near the nominal peak-`FOM_S` frontier.
 
+The Wiley manuscript uses these repository assets to support a mechanism-resolved design workflow: decompose `FOM_S` into charge-transfer and capacitance channels, map which channel limits each region of the disk-TENG design space, and screen designs for fabrication-tolerant performance rather than nominal peak performance alone.
+
+## GitHub About Metadata
+
 Recommended GitHub repository description:
 
 > Code, data, released surrogate checkpoint, publication assets, and Streamlit interface for mechanism-resolved, fabrication-tolerant disk-TENG design using a physics-consistent multi-output surrogate.
+
+Recommended topics:
+
+`triboelectric-nanogenerator`, `teng`, `surrogate-modeling`, `physics-informed-ml`, `transformer`, `materials-informatics`, `design-optimization`, `robust-design`, `streamlit`
 
 ## Repository Contents
 

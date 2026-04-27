@@ -1,8 +1,8 @@
 # Disk TENG Open Design Interface
 
-Interactive delivery layer for the released disk-TENG workflow described in the manuscript **"From Charge-Transfer to Capacitance Limits: Mechanism-Resolved Design of Disk Triboelectric Nanogenerators with Fabrication Tolerance"**.
+Interactive delivery layer for the released disk-TENG workflow described in the Wiley manuscript **"From Charge-Transfer to Capacitance Limits: Mechanism-Resolved Design of Disk Triboelectric Nanogenerators with Fabrication Tolerance"**.
 
-The app reuses the released physics-consistent multi-output surrogate, mechanism metrics, and robustness-screening logic used for the manuscript figures. It is intended for bounded exploration within the validated structural-dielectric domain.
+The app reuses the released physics-consistent multi-output surrogate, mechanism metrics, and robustness-screening logic used for the manuscript figures. It supports the paper's three user-facing tasks: single-point prediction, mechanism-resolved design-space exploration, and fabrication-tolerance-aware recommendation. It is intended for bounded exploration within the validated structural-dielectric domain.
 
 ## Main Features
 
@@ -10,6 +10,7 @@ The app reuses the released physics-consistent multi-output surrogate, mechanism
 - Figure-aligned design-space exploration across electrode-pair number, dielectric constant, `d/R`, and `h/R`.
 - Tolerance-aware candidate-window screening under geometric perturbations.
 - Publication asset browsing for the released main-text and supporting-information figures.
+- Manuscript-aligned scope notes so users treat the interface as a reproducibility and design-screening tool, not as an unconstrained extrapolation engine.
 
 ## Runtime Layout
 
