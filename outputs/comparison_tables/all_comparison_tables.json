@@ -7,6 +7,7 @@
       "T2": "outputs_multitask_physics/test_metrics.json",
       "T3": "outputs_multitask_physics/ood_metrics.json",
       "T4": "outputs/baselines/baseline_results.json + baseline_ood_results.json",
+      "P1_RF": "outputs/baselines/rf_baseline_results.json + rf_baseline_ood_results.json",
       "T6": "outputs/cross_validation/cv_results.json"
     },
     "note": "T5 ablation demoted to SI-only backup. Table 4 removed. Transformer(no cons.) removed from Table 1/2 — OOD data showed consistency loss has ambiguous/negative effect on generalization, presenting it invites reviewer scrutiny."
@@ -18,6 +19,14 @@
       "invC R²_log10": "0.9996±0.0000",
       "FOMS R²_log10": "0.9868±0.0007",
       "Consistency Pearson": "0.9961±0.0001",
+      "Type": "Baseline"
+    },
+    {
+      "Model": "Random Forest (×3 independent)",
+      "Qsc R²_log10": "0.9953±0.0001",
+      "invC R²_log10": "0.9970±0.0001",
+      "FOMS R²_log10": "0.9903±0.0001",
+      "Consistency Pearson": "0.9828±0.0003",
       "Type": "Baseline"
     },
     {
@@ -56,6 +65,17 @@
       "validate3 Cons.": "0.8845",
       "Avg FOMS": "0.2629",
       "Avg Cons.": "0.8077"
+    },
+    {
+      "Model": "Random Forest (×3)",
+      "validate1 FOMS": "0.6402",
+      "validate1 Cons.": "0.8942",
+      "validate2 FOMS": "0.5133",
+      "validate2 Cons.": "0.8258",
+      "validate3 FOMS": "0.8923",
+      "validate3 Cons.": "0.9026",
+      "Avg FOMS": "0.6819",
+      "Avg Cons.": "0.8742"
     },
     {
       "Model": "MLP (no cons.)",

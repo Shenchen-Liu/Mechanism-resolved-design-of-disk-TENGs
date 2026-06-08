@@ -87,6 +87,12 @@ Run a single prediction:
 python code/predict_multitask_physics.py --n 4 --E 3 --dd 0.125 --hh 0.0625
 ```
 
+Run the Random Forest baseline added for the MDPI V2.1 comparison:
+
+```bash
+python code/rf_baseline_experiment.py --n_jobs 1
+```
+
 Regenerate the publication assets:
 
 ```bash

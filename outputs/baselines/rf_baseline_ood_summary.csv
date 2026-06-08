@@ -1,0 +1,2 @@
+Model,validate1 FOMS,validate1 Cons.,validate2 FOMS,validate2 Cons.,validate3 FOMS,validate3 Cons.,Avg FOMS,Avg Cons.
+Random Forest (x3),0.6402,0.8942,0.5133,0.8258,0.8923,0.9026,0.6819,0.8742

@@ -38,6 +38,8 @@ TEST_METRICS = ROOT / "outputs_multitask_physics" / "test_metrics.json"
 OOD_METRICS = ROOT / "outputs_multitask_physics" / "ood_metrics.json"
 BASELINE_RES = ROOT / "outputs" / "baselines" / "baseline_results.json"
 BASELINE_OOD = ROOT / "outputs" / "baselines" / "baseline_ood_results.json"
+RF_RES = ROOT / "outputs" / "baselines" / "rf_baseline_results.json"
+RF_OOD = ROOT / "outputs" / "baselines" / "rf_baseline_ood_results.json"
 CV_RESULTS = ROOT / "outputs" / "cross_validation" / "cv_results.json"
 THRESH_SENS = ROOT / "outputs" / "sensitivity" / "threshold_sensitivity.csv"
 GRID_SENS = ROOT / "outputs" / "sensitivity" / "grid_resolution_sensitivity.csv"
@@ -412,24 +414,32 @@ def fig_s3_baseline_comparison():
         bl_ood = json.load(f)
     with open(OOD_METRICS) as f:
         ood = json.load(f)
+    with open(RF_RES) as f:
+        rf = json.load(f)
+    with open(RF_OOD) as f:
+        rf_ood = json.load(f)
 
-    fig, axes = plt.subplots(1, 2, figsize=(17.5 / 2.54, 7.0 / 2.54))
+    fig, axes = plt.subplots(1, 2, figsize=(20.0 / 2.54, 7.0 / 2.54))
 
     # ── (a) Test-set R²_log10 ──
     ax = axes[0]
     models = ["XGB (independent ×3)", "MLP (no consistency)", "MLP (+ consistency)"]
-    main_names = ["XGBoost", "Multi-MLP", "Multi-MLP", "Ours"]
-    sub_names = ["(indep. ×3)", "(no cons.)", "(+ cons.)", "(Transformer)"]
+    main_names = ["XGBoost", "Rand. Forest", "Multi-MLP", "Multi-MLP", "Ours"]
+    sub_names = ["(indep. ×3)", "(indep. ×3)", "(no cons.)", "(+ cons.)", "(Transformer)"]
     targets = ["qsc", "invc", "foms_direct"]
     target_labels = [r"$Q_{sc}$", r"$C^{-1}_{sum}$", r"FOMS$_{direct}$"]
     colors = [TASK_COLORS["qsc"], TASK_COLORS["invc"], TASK_COLORS["foms_direct"]]
 
     x = np.arange(len(main_names))
-    width = 0.20
+    width = 0.18
 
     for j, (tgt, tgt_label, c) in enumerate(zip(targets, target_labels, colors)):
         vals, errs = [], []
-        for m in models:
+        vals.append(bl["baselines"][models[0]][tgt]["r2_log10"]["mean"])
+        errs.append(bl["baselines"][models[0]][tgt]["r2_log10"]["std"])
+        vals.append(rf["aggregated_test"][tgt]["r2_log10"]["mean"])
+        errs.append(rf["aggregated_test"][tgt]["r2_log10"]["std"])
+        for m in models[1:]:
             vals.append(bl["baselines"][m][tgt]["r2_log10"]["mean"])
             errs.append(bl["baselines"][m][tgt]["r2_log10"]["std"])
         vals.append(bl["our_model"][tgt]["r2_log10"])
@@ -461,7 +471,7 @@ def fig_s3_baseline_comparison():
             transform=ax.get_xaxis_transform(),
             ha="center",
             va="top",
-            fontsize=6.2,
+            fontsize=5.8,
             color="#111827",
         )
         ax.text(
@@ -471,7 +481,7 @@ def fig_s3_baseline_comparison():
             transform=ax.get_xaxis_transform(),
             ha="center",
             va="top",
-            fontsize=5.2,
+            fontsize=4.8,
             color="#4B5563",
         )
     ax.set_ylim(0.88, 1.0)
@@ -485,7 +495,7 @@ def fig_s3_baseline_comparison():
         columnspacing=1.2,
     )
     ax.axhline(0.95, color=REF_LINE_COLOR, ls=SHORT_DASH, lw=0.7, alpha=0.75)
-    ax.text(3.58, 0.9513, "0.95 threshold", fontsize=4.8, color="gray", alpha=0.75)
+    ax.text(4.48, 0.9513, "0.95 threshold", fontsize=4.8, color="gray", alpha=0.75)
     hide_extra_spines(ax)
     add_panel_header(ax, "a", "Held-out accuracy is competitive", y=1.07)
 
@@ -496,11 +506,13 @@ def fig_s3_baseline_comparison():
     val_colors = [DATASET_COLORS["V1"], DATASET_COLORS["V2"], DATASET_COLORS["V3"]]
 
     x = np.arange(len(main_names))
-    width = 0.20
+    width = 0.18
 
     for j, (vs, vl, vc) in enumerate(zip(val_sets, val_labels, val_colors)):
         vals = []
-        for m in models:
+        vals.append(bl_ood[vs][models[0]]["foms_direct"]["r2_log10"])
+        vals.append(rf_ood["results"][vs]["foms_direct"]["r2_log10"])
+        for m in models[1:]:
             vals.append(bl_ood[vs][m]["foms_direct"]["r2_log10"])
         vals.append(ood[vs]["foms_direct"]["r2_log10"])
 
@@ -523,7 +535,7 @@ def fig_s3_baseline_comparison():
             transform=ax.get_xaxis_transform(),
             ha="center",
             va="top",
-            fontsize=6.2,
+            fontsize=5.8,
             color="#111827",
         )
         ax.text(
@@ -533,7 +545,7 @@ def fig_s3_baseline_comparison():
             transform=ax.get_xaxis_transform(),
             ha="center",
             va="top",
-            fontsize=5.2,
+            fontsize=4.8,
             color="#4B5563",
         )
     ax.set_ylim(-0.8, 1.0)
