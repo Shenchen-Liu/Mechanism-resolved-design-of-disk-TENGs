@@ -1,6 +1,6 @@
 ## Code and Data Availability
 
-The code and data supporting the AFM/Wiley manuscript **"Charge–Capacitance Channel Decomposition Reveals Fabrication-Tolerant Design Windows for Disk Triboelectric Nanogenerators"** are provided in this repository.
+The code and data supporting the MDPI submission V2.1 manuscript **"Charge–Capacitance Channel Decomposition Reveals Fabrication-Tolerant Design Windows for Disk Triboelectric Nanogenerators"** are provided in this repository.
 
 The repository includes:
 
@@ -11,12 +11,12 @@ The repository includes:
 - exported main-text and supporting-information figure assets
 - a Streamlit-based open design interface for prediction, design-space exploration, and tolerance-aware recommendation
 
-AFM/Wiley Data Availability Statement:
+MDPI Data Availability Statement:
 
-> The code and data supporting this study are available in the GitHub repository at https://github.com/Shenchen-Liu/Mechanism-resolved-design-of-disk-TENGs. The repository includes the final processed training dataset, the three final processed external validation datasets, the corresponding released prediction result tables, the released multitask surrogate checkpoint and scaler files, the analysis and figure-generation scripts, and the Streamlit-based open design interface used for prediction, design-space exploration, and tolerance-aware recommendation.
+> The original data presented in this study are openly available in GitHub at https://github.com/Shenchen-Liu/Mechanism-resolved-design-of-disk-TENGs. Further inquiries can be directed to the corresponding author.
 
 Scope:
 
 - The public package is limited to final processed datasets, released model artifacts, reproducibility scripts, exported manuscript assets, and the open interface.
 - Raw COMSOL exports and intermediate manuscript-preparation files are not part of the released repository package.
-- Predictions should be interpreted within the structural-dielectric domain described in the AFM/Wiley manuscript.
+- Predictions should be interpreted within the structural-dielectric domain described in the MDPI submission V2.1 manuscript.

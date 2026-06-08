@@ -943,16 +943,6 @@ def build_fig2():
             )
         )
 
-    ax_d.text(
-        0.50,
-        0.09,
-        "schematic only; explicit windows in Fig. 3",
-        transform=ax_d.transAxes,
-        fontsize=FIG_CALLOUT_SMALL_SIZE,
-        color=BRIDGE["muted"],
-        va="center",
-    )
-
     fig.subplots_adjust(left=0.085, right=0.972, top=0.93, bottom=0.085)
     main_files, preview_file = save_figure(fig, "fig02_mechanism_landscape")
     plt.close(fig)
