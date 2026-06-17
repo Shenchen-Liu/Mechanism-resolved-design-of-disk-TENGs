@@ -1,0 +1,42 @@
+cff-version: 1.2.0
+message: "If you use this repository, please cite the accompanying article."
+title: "Mechanism-resolved design of disk triboelectric nanogenerators"
+authors:
+  - family-names: Liu
+    given-names: Shenchen
+  - family-names: Shao
+    given-names: Yangshi
+  - family-names: Feng
+    given-names: Xuhong
+  - family-names: Lin
+    given-names: Zehui
+  - family-names: Jing
+    given-names: Xiaoming
+  - family-names: Wang
+    given-names: "Everett X."
+repository-code: "https://github.com/Shenchen-Liu/Mechanism-resolved-design-of-disk-TENGs"
+url: "https://github.com/Shenchen-Liu/Mechanism-resolved-design-of-disk-TENGs"
+license: MIT
+preferred-citation:
+  type: article
+  title: "Charge–Capacitance Channel Decomposition Reveals Fabrication-Tolerant Design Windows for Disk Triboelectric Nanogenerators"
+  authors:
+    - family-names: Liu
+      given-names: Shenchen
+    - family-names: Shao
+      given-names: Yangshi
+    - family-names: Feng
+      given-names: Xuhong
+    - family-names: Lin
+      given-names: Zehui
+    - family-names: Jing
+      given-names: Xiaoming
+    - family-names: Wang
+      given-names: "Everett X."
+  journal: "Materials"
+  year: 2026
+  volume: 19
+  issue: 12
+  start: 2607
+  doi: "10.3390/ma19122607"
+  url: "https://www.mdpi.com/1996-1944/19/12/2607"

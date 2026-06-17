@@ -1,62 +1,95 @@
-# Charge–Capacitance Channel Decomposition Reveals Fabrication-Tolerant Design Windows for Disk Triboelectric Nanogenerators
+<div align="center">
 
-This repository supports the MDPI submission V2.1 manuscript **"Charge–Capacitance Channel Decomposition Reveals Fabrication-Tolerant Design Windows for Disk Triboelectric Nanogenerators"**. It provides the final processed datasets, released physics-consistent multi-output surrogate checkpoint, analysis scripts, publication assets, and the Streamlit-based open design interface used for prediction, design-space exploration, and fabrication-tolerance-aware recommendation.
+<img src="docs/assets/article_banner.png" alt="Article banner: Charge–Capacitance Channel Decomposition Reveals Fabrication-Tolerant Design Windows for Disk Triboelectric Nanogenerators" width="100%">
 
-The workflow decomposes the structural figure of merit (`FOM_S`) into a charge-transfer channel (`Q_sc,MACRS`) and a capacitance channel (`C^{-1}_sum`). A shared-backbone multitask surrogate predicts `Q_sc,MACRS`, `C^{-1}_sum`, and `FOM_S` from disk-TENG design variables: electrode-pair number, dielectric constant, dielectric-thickness-to-radius ratio (`h/R`), and air-gap-to-radius ratio (`d/R`).
+# Mechanism-resolved Design of Disk TENGs
 
-## MDPI Submission V2.1 Abstract
+**Open-source data, surrogate model, and design interface for mechanism-aware, fabrication-tolerant disk triboelectric nanogenerator design.**
 
-Disk triboelectric nanogenerator (TENG) design pursues high structural figure of merit (`FOM_S`), yet nominal peak designs often sit in regions with steep geometric gradients; under a controlled ±10% symmetric perturbation proxy, worst-case `FOM_S` retention near the peak frontier falls to 2.7%. We decompose `FOM_S` into a charge-transfer channel (`Q_sc,MACRS`) and a capacitance channel (`C^{-1}_sum`), and train a multi-output surrogate with a physics consistency constraint on 1,944 COMSOL simulations to jointly predict `Q_sc,MACRS`, `C^{-1}_sum`, and `FOM_S` across electrode-pair number, dielectric-thickness-to-radius ratio (`h/R`), air-gap-to-radius ratio (`d/R`), and dielectric constant. Evaluating 7,776 design points reveals that 58.6% of the explored space is charge-dominant, 36.1% mixed, and 5.3% capacitance-dominant; raising dielectric constant shifts the mechanism toward capacitance-limited behavior, while a larger air gap reinforces charge-limited behavior. Mixed-regime windows tolerate the same perturbation proxy far better than peak-`FOM_S` candidates, supplying candidate design windows for pre-fabrication screening within the validated simulation domain. The surrogate reaches pooled out-of-distribution `FOM_S` `R^2_log10 = 0.914` on 43 unseen structural and dielectric combinations. Delivered through an open-source Streamlit interface, the channel decomposition, mechanism mapping, and tolerance screening let designers identify the limiting mechanism and select candidate designs that are expected to tolerate geometric variation within the validated simulation domain, prior to fabrication.
+<p>
+  <a href="https://doi.org/10.3390/ma19122607">
+    <img src="https://img.shields.io/badge/DOI-10.3390%2Fma19122607-blue" alt="DOI">
+  </a>
+  <a href="https://www.mdpi.com/1996-1944/19/12/2607">
+    <img src="https://img.shields.io/badge/Published%20in-Materials%202026-gold" alt="Published in Materials">
+  </a>
+  <a href="https://www.mdpi.com/1996-1944/19/12/2607">
+    <img src="https://img.shields.io/badge/Article-Open%20Access-success" alt="Open Access Article">
+  </a>
+  <img src="https://img.shields.io/badge/Model-Physics--consistent%20multitask%20surrogate-purple" alt="Physics-consistent surrogate model">
+  <img src="https://img.shields.io/badge/App-Streamlit%20design%20interface-FF4B4B" alt="Streamlit interface">
+</p>
 
-## MDPI Submission V2.1 Summary
+</div>
 
-- Training data: 1,944 final processed COMSOL-derived disk-TENG designs.
-- Dense design-space evaluation: 7,776 supported design points.
-- Mechanism distribution under the reference setting: 58.6% charge-dominant, 36.1% mixed-regime, and 5.3% capacitance-dominant.
-- External validation: 43 unseen structural-dielectric combinations across three released validation sets.
-- Pooled out-of-distribution performance: `FOM_S` `R^2_log10 = 0.914`.
-- Robustness finding: mixed-regime windows tolerate ±10% geometric perturbations better than designs near the nominal peak-`FOM_S` frontier.
+---
 
-The MDPI submission V2.1 manuscript uses these repository assets to support a mechanism-resolved design workflow: decompose `FOM_S` into charge-transfer and capacitance channels, map which channel limits each region of the disk-TENG design space, and screen designs for fabrication-tolerant performance rather than nominal peak performance alone.
+## Publication
 
-## GitHub About Metadata
+This repository accompanies the following open-access article:
 
-Recommended GitHub repository description:
+> **Shenchen Liu, Yangshi Shao, Xuhong Feng, Zehui Lin, Xiaoming Jing, and Everett X. Wang**
+>
+> **Charge–Capacitance Channel Decomposition Reveals Fabrication-Tolerant Design Windows for Disk Triboelectric Nanogenerators**
+>
+> *Materials* **2026**, *19*(12), 2607.
+>
+> https://doi.org/10.3390/ma19122607
 
-> Code, data, released surrogate checkpoint, publication assets, and Streamlit interface for charge-capacitance channel decomposition and fabrication-tolerant disk-TENG design.
+The study introduces a charge–capacitance channel decomposition strategy for disk triboelectric nanogenerators. Instead of optimizing the structural figure of merit as a single scalar target, the workflow separates the charge-transfer and capacitance-related pathways, enabling mechanism-resolved prediction, design-space mapping, and fabrication-tolerance screening.
 
-Recommended topics:
+This repository provides the open implementation used in the paper, including processed datasets, external validation sets, trained model artifacts, prediction tables, figure-generation scripts, and a Streamlit-based design interface.
 
-`triboelectric-nanogenerator`, `teng`, `surrogate-modeling`, `physics-informed-ml`, `transformer`, `materials-informatics`, `design-optimization`, `robust-design`, `streamlit`
+## How to Cite
+
+If you use the data, model, scripts, or design interface in this repository, please cite:
+
+```bibtex
+@article{liu2026charge,
+  title   = {Charge--Capacitance Channel Decomposition Reveals Fabrication-Tolerant
+             Design Windows for Disk Triboelectric Nanogenerators},
+  author  = {Liu, Shenchen and Shao, Yangshi and Feng, Xuhong and
+             Lin, Zehui and Jing, Xiaoming and Wang, Everett X.},
+  journal = {Materials},
+  year    = {2026},
+  volume  = {19},
+  number  = {12},
+  pages   = {2607},
+  doi     = {10.3390/ma19122607},
+  url     = {https://www.mdpi.com/1996-1944/19/12/2607}
+}
+```
+
+> GitHub also provides a **"Cite this repository"** button in the sidebar, powered by the [`CITATION.cff`](CITATION.cff) file.
+
+---
 
 ## Repository Contents
 
-- Final processed training dataset and three final processed external validation datasets.
-- Released prediction result tables for the three external validation sets.
-- Released multitask surrogate checkpoint and scaler files.
-- Scripts for training, inference, cross-validation, mechanism analysis, robustness analysis, and figure generation.
-- Exported main-text figure assets and supporting-information assets, including the open design interface figure (`Fig. S8`).
-- Streamlit app for single-point prediction, mechanism-aware design-space exploration, and tolerance-aware candidate-window screening.
+- **Final processed training dataset** and three external validation datasets.
+- **Released prediction result tables** for the three external validation sets.
+- **Released multitask surrogate checkpoint** and scaler files.
+- **Scripts** for training, inference, cross-validation, mechanism analysis, robustness analysis, and figure generation.
+- **Exported main-text and SI figure assets**, including the open design interface figure (Fig. S8).
+- **Streamlit app** for single-point prediction, mechanism-aware design-space exploration, and tolerance-aware candidate-window screening.
 
 ## Data Files
 
 Final processed datasets in `data/`:
 
-- `disk_teng_training_processed.csv`
-- `disk_teng_validation_v1_processed.csv`
-- `disk_teng_validation_v2_processed.csv`
-- `disk_teng_validation_v3_processed.csv`
-
-Prediction result tables in `data/`:
-
-- `disk_teng_validation_v1_predictions.csv`
-- `disk_teng_validation_v2_predictions.csv`
-- `disk_teng_validation_v3_predictions.csv`
+| File | Description |
+|------|-------------|
+| `disk_teng_training_processed.csv` | Training data (1,944 COMSOL-derived designs) |
+| `disk_teng_validation_v1_processed.csv` | External validation set 1 |
+| `disk_teng_validation_v2_processed.csv` | External validation set 2 |
+| `disk_teng_validation_v3_processed.csv` | External validation set 3 |
+| `disk_teng_validation_v1_predictions.csv` | Prediction results for validation set 1 |
+| `disk_teng_validation_v2_predictions.csv` | Prediction results for validation set 2 |
+| `disk_teng_validation_v3_predictions.csv` | Prediction results for validation set 3 |
 
 ## Repository Layout
 
 ```text
-mechanism-resolved-performance-landscape-and-tolerance-aware-design-windows-for-disk-triboelectric-nanogenerators/
 ├── code/
 │   ├── train_multitask_physics.py
 │   ├── predict_multitask_physics.py
@@ -70,7 +103,9 @@ mechanism-resolved-performance-landscape-and-tolerance-aware-design-windows-for-
 ├── figures_publication/
 ├── outputs/
 ├── outputs_multitask_physics/
-└── outputs_mechanism_multitask/
+├── outputs_mechanism_multitask/
+└── docs/
+    └── assets/                  # Article banner image
 ```
 
 ## Quick Start
@@ -87,24 +122,31 @@ Run a single prediction:
 python code/predict_multitask_physics.py --n 4 --E 3 --dd 0.125 --hh 0.0625
 ```
 
-Run the Random Forest baseline added for the MDPI V2.1 comparison:
+Run the Random Forest baseline:
 
 ```bash
 python code/rf_baseline_experiment.py --n_jobs 1
 ```
 
-Regenerate the publication assets:
+Regenerate publication assets:
 
 ```bash
 python code/generate_publication_figures.py
 python code/generate_si_assets.py
 ```
 
-Launch the Streamlit open design interface:
+Launch the Streamlit design interface:
 
 ```bash
 streamlit run code/streamlit_app/app.py
 ```
+
+## Article and Supporting Files
+
+| Resource | Link |
+|----------|------|
+| Paper | https://www.mdpi.com/1996-1944/19/12/2607 |
+| DOI | https://doi.org/10.3390/ma19122607 |
 
 ## Scope Notes
 
@@ -113,4 +155,8 @@ streamlit run code/streamlit_app/app.py
 - Raw and intermediate dataset-building files are not included.
 - Existing exported figures are included so the repository can be inspected without rerunning the full workflow.
 - The Streamlit interface is a delivery layer for the reported workflow and reuses the released surrogate, mechanism metrics, and robustness-screening logic.
-- Use predictions within the validated structural-dielectric domain described in the MDPI submission V2.1 manuscript.
+- Use predictions within the validated structural-dielectric domain described in the manuscript.
+
+## License
+
+This project is released under the [MIT License](LICENSE).
